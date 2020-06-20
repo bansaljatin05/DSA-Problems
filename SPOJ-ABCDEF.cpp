@@ -12,7 +12,7 @@ int Solution() {
 		for(int j = 0; j < n; j++) {
 			for(int k = 0; k < n; k++) {
 				v1.push_back(arr[i]*arr[j] + arr[k]);
-				if(arr[i] != 0)
+				if(arr[i] != 0)//Condition for d != 0 ***Very important to remember****
 				v2.push_back(arr[i]*(arr[j] + arr[k]));
 			}
 		}
