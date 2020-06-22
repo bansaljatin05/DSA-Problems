@@ -25,7 +25,7 @@ int main(int argc, char const *argv[])
 		sort(arr, arr + n);
 		int ans = 0;
 		for(int i = 0; i < n; i++) {
-			if(BinarySearch(m - arr[i], i + 1, n)) ans++;
+			if(BinarySearch(m - arr[i], i + 1, n - 1)) ans++;
 		}
 		cout<<ans<<endl;
 	}
