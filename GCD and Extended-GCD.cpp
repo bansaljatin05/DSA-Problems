@@ -30,6 +30,11 @@ int Euclid(int a, int b) {
 	return Euclid(b, a%b);
 }
 
+int ModuloMultiplicativeInverse(A, M) { //For A given A, M in (A.B)%M = 1 find the value of B in range[1, M-1]
+	Triplet ans = ExtendedEuclid(A, M);
+	return ans.x;
+}
+
 int main(int argc, char const *argv[])
 {
 	int a, b;
